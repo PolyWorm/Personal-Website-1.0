@@ -1,4 +1,29 @@
 div.nav-bar {
     position: sticky;
-    height: 15%;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 14vh;
+    background-color: violet;
+}
+div.links {
+    padding-top: 0;
+    padding-left: 8vw;
+    background-color: white;
+    height: 100%;
+    list-style-type: none;
+}
+ul.links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding-top: 5vh;
+}
+.link {
+    background-color: teal;
+    padding-right: 10%;
+    text-align: left;
+    list-style-position: inside;
+}
+.logo {
+    background-color: thistle;
 }
