@@ -2,12 +2,13 @@ import React from 'react';
 import Navbar from "./Navbar";
 import './App.css';
 
-function App() {
-  return (
-    <div className="body">
-      <Navbar />
-    </div>
-  );
+export default class App extends React.Component {
+  render() {
+    return (
+      <div className="body">
+        <p>helllo</p>
+        <Navbar />
+      </div>
+    );
+  }
 }
-
-export default App;

@@ -10,13 +10,13 @@ export default class Navbar extends React.Component() {
                 </div>
                 <div className="links">
                     <div className="link">
-                        about
+                        <p>about</p>
                     </div>
                     <div className="link">
-                        portfoloio
+                        <p>portfoloio</p>
                     </div>
                     <div className="link">
-                        resume
+                        <p>resume</p>
                     </div>
                 </div>
             </div>
