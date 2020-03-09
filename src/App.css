@@ -1,8 +1,10 @@
 .body {
-    padding-top: 10vh;
     height: 100vh;
     width: 100vw;
     background-color: #232323;
+}
+.buffer-bar {
+    height: 7vh;
 }
 @font-face {
     font-family: 'Poppins';

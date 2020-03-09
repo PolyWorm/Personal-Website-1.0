@@ -1,10 +1,10 @@
 div.nav-bar {
+    position: -webkit-sticky;
     position: sticky;
     display: grid;
     grid-template-columns: 75% 25%;
     height: 14vh;
     background-color: #232323;
-
 }
 div.links {
     background-color: #232323;
@@ -30,10 +30,18 @@ ul.links {
     font-size: 20px;
     font-weight: 500;
 }
+.link a {
+    color: white;
+    text-decoration: none;
+}
+.link a:hover {
+    text-decoration: underline;
+}
 .logo {
     background-color: #232323;
-    height: 100px;
+    height: 90px;
     padding-right: 10vw;
+    padding-top: 1vh;
 }
 .logo > svg {
     float: right;
@@ -42,6 +50,6 @@ ul.links {
     height: 100%;
 }
 .logo-path {
-    stroke-dasharray: 500;
+    stroke-dasharray: 400;
     stroke-dashoffset: 0;
 }
