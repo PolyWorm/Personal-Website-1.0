@@ -1,29 +1,47 @@
 div.nav-bar {
     position: sticky;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 75% 25%;
     height: 14vh;
-    background-color: violet;
+    background-color: #232323;
+
 }
 div.links {
-    padding-top: 0;
-    padding-left: 8vw;
-    background-color: white;
+    background-color: #232323;
     height: 100%;
     list-style-type: none;
 }
 ul.links {
     list-style-type: none;
     display: flex;
-    margin: 0;
-    padding-top: 5vh;
+    margin-top: 30px;
+    margin-left: 10vw;
+    background-color: #232323;
+    padding-inline-start: 0;
 }
 .link {
-    background-color: teal;
-    padding-right: 10%;
+    background-color: #232323;
+    margin-right: 10%;
     text-align: left;
     list-style-position: inside;
+    color: white;
+    letter-spacing: 1px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
 }
 .logo {
-    background-color: thistle;
+    background-color: #232323;
+    height: 100px;
+    padding-right: 10vw;
+}
+.logo > svg {
+    float: right;
+    padding-right: 0;
+    width: auto;
+    height: 100%;
+}
+.logo-path {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 0;
 }
