@@ -19,8 +19,8 @@ export default class App extends React.Component {
       <div className="body">
         <div className="buffer-bar"></div>
         <Navbar about={() => this.pageSwap(0)}
-                about={() => this.pageSwap(0)}
-                about={() => this.pageSwap(0)}/>
+                resume={() => this.pageSwap(1)}
+                portfolio={() => this.pageSwap(2)}/>
       </div>
     );
   }

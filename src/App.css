@@ -6,6 +6,11 @@
 .buffer-bar {
     height: 7vh;
 }
+@media only screen and (max-width: 600px) {
+    .buffer-bar {
+        height: 4vh;
+    }
+  }
 @font-face {
     font-family: 'Poppins';
     src: url('fonts/Poppins-Light.woff2') format('woff2'),

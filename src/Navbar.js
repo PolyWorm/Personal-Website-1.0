@@ -10,39 +10,56 @@ export default class Navbar extends React.Component {
         }
     }
     componentDidMount() {
-        {
-            anime({
-                targets: '.logo-path',
-                strokeDashoffset: [500, 0],
-                easing: 'easeInOutSine',
-                duration: 3000,
-                delay: function(el, i) { return i * 50 },
-              });
-        }
+        this.animateLogo()
+    }
+    animateLogo() {
+        anime({
+            targets: '.logo-path',
+            strokeDashoffset: [450, 0],
+            direction: 'normal',
+            easing: 'easeInSine',
+            duration: 2000,
+            delay: function(el, i) { return i * 50 },
+          });
+    }
+    animateLogoReverse() {
+        anime({
+            targets: '.logo-path',
+            strokeDashoffset: [0, 450],
+            direction: 'alternate',
+            easing: 'easeInSine',
+            duration: 2000,
+            delay: function(el, i) { return i * 50 },
+          });
     }
     render() {
         return (
             <div className="nav-bar">
                 <div className = "links">
                     <ul className = "links">
+                        <li className="link collapse">
+                            <button onClick={this.props.about}>
+                                v
+                            </button>
+                        </li>
                         <li className="link">
-                            <a href="#" onClick={this.props.handle}>
+                            <button onClick={this.props.about}>
                                 about
-                            </a>
+                            </button>
                         </li>
                         <li className="link">
-                            <a href="#" onClick={this.props.handle}>
+                            <button onClick={this.props.resume}>
                                 resume
-                            </a>
+                            </button>
                         </li>
                         <li className="link">
-                            <a href="#" onClick={this.props.handle}>
+                            <button onClick={this.props.portfolio}>
                                 portfolio
-                            </a>
+                            </button>
                         </li>
                     </ul>
                 </div>
-                <div className="logo">
+                <div className="logo" onClick={this.animateLogoReverse}>
                     <svg fill="none" id="logoAnimation" xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 130 130">
                         <path className="logo-path" d="M58.82,125V78.78a12.6,12.6,0,0,0-12.6-12.6H0V80.88H38.24a5.88,5.88,0,0,1,5.88,5.88V125Z" stroke="white" stroke-width="2"/>
                         <path className="logo-path" d="M36.76,125V110.29H20.59a5.88,5.88,0,0,1-5.88-5.88V88.24H0V112.4A12.6,12.6,0,0,0,12.6,125Z" stroke="white" stroke-width="2"/>

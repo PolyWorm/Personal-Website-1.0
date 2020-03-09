@@ -14,7 +14,7 @@ div.links {
 ul.links {
     list-style-type: none;
     display: flex;
-    margin-top: 30px;
+    margin-top: 6vh;
     margin-left: 10vw;
     background-color: #232323;
     padding-inline-start: 0;
@@ -25,31 +25,61 @@ ul.links {
     text-align: left;
     list-style-position: inside;
     color: white;
+}
+.link button {
+    background-size: 0 10px;
+    text-align: left;
+    padding-left: 0;
+    background-color: #232323;
     letter-spacing: 1px;
     font-family: Poppins;
     font-size: 20px;
     font-weight: 500;
-}
-.link a {
+    border: none;
     color: white;
+    transition: color 0.5s;
     text-decoration: none;
+    outline: none;
 }
-.link a:hover {
-    text-decoration: underline;
+.link button:hover {
+    color: #a3a3a3;
+}
+.link button:active {
+    color: #ffffff;
+    transform: translateY(2px);
+}
+.collapse {
+    display: none;
 }
 .logo {
     background-color: #232323;
     height: 90px;
     padding-right: 10vw;
-    padding-top: 1vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 .logo > svg {
     float: right;
     padding-right: 0;
     width: auto;
     height: 100%;
+    fill: white;
+    fill-opacity: 5%;
+    transition: fill-opacity 0.3s;
+}
+.logo > svg:hover {
+    fill-opacity: 15%;
+}
+.logo > svg:active {
+    fill-opacity: 100%;
 }
 .logo-path {
     stroke-dasharray: 400;
     stroke-dashoffset: 0;
 }
+@media only screen and (max-width: 600px) {
+    .link button {
+        flex-wrap: wrap;
+        
+    }
+  }
