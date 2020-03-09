@@ -5,9 +5,6 @@ import anime from 'animejs/lib/anime.es.js';
 export default class Navbar extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {
-            page: 0
-        }
     }
     componentDidMount() {
         this.animateLogo()
@@ -37,11 +34,6 @@ export default class Navbar extends React.Component {
             <div className="nav-bar">
                 <div className = "links">
                     <ul className = "links">
-                        <li className="link collapse">
-                            <button onClick={this.props.about}>
-                                v
-                            </button>
-                        </li>
                         <li className="link">
                             <button onClick={this.props.about}>
                                 about

@@ -82,4 +82,20 @@ ul.links {
         flex-wrap: wrap;
         
     }
+    .logo > svg {
+        float: right;
+        padding-right: 0;
+        width: auto;
+        height: 100%;
+        fill-opacity: 5%;
+    }
+
+    ul.links {
+        flex-wrap: wrap;
+        margin-top: 1vh;
+    }
+    div.nav-bar {
+        grid-template-columns: 40% 60%;
+        position: relative;
+    }
   }

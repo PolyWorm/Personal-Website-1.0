@@ -21,6 +21,7 @@ export default class App extends React.Component {
         <Navbar about={() => this.pageSwap(0)}
                 resume={() => this.pageSwap(1)}
                 portfolio={() => this.pageSwap(2)}/>
+        
       </div>
     );
   }
