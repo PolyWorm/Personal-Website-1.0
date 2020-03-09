@@ -1,9 +1,10 @@
 div.nav-bar {
     position: -webkit-sticky;
     position: sticky;
+    top: 0;
     display: grid;
     grid-template-columns: 75% 25%;
-    height: 14vh;
+    height: auto;
     background-color: #232323;
 }
 div.links {
@@ -89,6 +90,5 @@ ul.links {
     }
     div.nav-bar {
         grid-template-columns: 40% 60%;
-        position: relative;
     }
   }

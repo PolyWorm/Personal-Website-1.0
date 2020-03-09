@@ -1,0 +1,16 @@
+.window{
+    margin: 0 10vw 10vw;
+    height: 100vh;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+.window-0 {
+    background-color: black;
+}
+.window-1 {
+    background-color: yellow;
+}
+.window-2 {
+    background-color: black;
+}

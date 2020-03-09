@@ -2,9 +2,10 @@
     height: 100vh;
     width: 100vw;
     background-color: #232323;
+    overflow: auto;
 }
 .buffer-bar {
-    height: 7vh;
+    height: 4vh;
 }
 @media only screen and (max-width: 600px) {
     .buffer-bar {
