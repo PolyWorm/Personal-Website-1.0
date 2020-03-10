@@ -19,7 +19,7 @@ export default class Content extends React.Component {
             return(
                 <div className="window window-1"> 
                     <h1><br/>All about me.</h1>
-                    <p>I have a passion for creating beautiful things, and beauty for me refers to more than just aesthetic. I aim to create applications that feel natural to use. Currently, I'm interested in user interaction within VR and AR. Feel free to contact me: poliworm@gmail.com </p>
+                    <p>I'm currently studying at UC Berkeley. I have a passion for creating beautiful things, and beauty for me refers to more than just aesthetic. I aim to create applications that feel natural to use. Currently, I'm interested in user interaction within VR and AR. Feel free to contact me: poliworm@gmail.com </p>
                     <button className="b-1" onClick={this.props.portfolio}>
                         <a className="b-2" href="mailto:poliworm@gmail.com" target="_top">email me</a>
                     </button>
