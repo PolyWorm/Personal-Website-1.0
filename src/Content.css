@@ -1,12 +1,46 @@
 .window{
-    margin: 0 10vw 10vw;
-    height: 100vh;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
+    margin: 0 10vw 0;
+    height: 60vh;
+    background-color: black;
+
+}
+.window h1{
+    letter-spacing: 1px;
+    font-family: Poppins;
+    font-size: 9vw;
+    font-weight: 600;
+    color: #232323;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.window p{
+    margin-top: 0;
+    letter-spacing: 1px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 100;
+    color: #232323;
+}
+.window button {
+    border-radius: 20px;
+    margin-top: 20vh;
+    height: 60px;
+    width: 200px;
+    background-size: 0 10px;
+    background-color: #ffffff;
+    letter-spacing: 1px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    color: #232323;
+    border: none;
+    box-shadow: 8px 8px 18px -3px rgba(0,0,0,0.1), inset 8px 8px 18px -3px rgba(255,255,255,0.5);
+    transition: color 0.5s;
+    text-decoration: none;
+    outline: none;
 }
 .window-0 {
-    background-color: black;
+    background-color: white;
 }
 .window-1 {
     background-color: yellow;
@@ -14,3 +48,14 @@
 .window-2 {
     background-color: black;
 }
+@media only screen and (max-width: 700px) {
+    .window {
+        margin: 10vh 10vw 0;
+    }
+    .window h1{
+        font-size: px;
+    }
+    .window button {
+        margin-top: 20vh;
+    }
+  }

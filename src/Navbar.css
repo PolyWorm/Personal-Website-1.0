@@ -1,43 +1,46 @@
+.bottom {
+    display: none;
+}
 div.nav-bar {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 25% 75%;
     height: auto;
-    background-color: #232323;
+    background-color: #ffffff;
 }
 div.links {
-    background-color: #232323;
+    background-color: #ffffff;
     height: 100%;
     list-style-type: none;
 }
 ul.links {
     list-style-type: none;
     display: flex;
+    justify-content: flex-end;
     margin-top: 6vh;
-    margin-left: 10vw;
-    background-color: #232323;
+    margin-right: 10vw;
+    background-color: #ffffff;
     padding-inline-start: 0;
 }
 .link {
-    background-color: #232323;
-    margin-right: 10%;
+    background-color: #ffffff;
+    margin-left: 10%;
     text-align: left;
     list-style-position: inside;
-    color: white;
+    color: #232323;
 }
 .link button {
     background-size: 0 10px;
     text-align: left;
     padding-left: 0;
-    background-color: #232323;
+    background-color: #ffffff;
     letter-spacing: 1px;
     font-family: Poppins;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: normal;
+    color: #232323;
     border: none;
-    color: white;
     transition: color 0.5s;
     text-decoration: none;
     outline: none;
@@ -49,46 +52,47 @@ ul.links {
     color: #ffffff;
     transform: translateY(2px);
 }
-.collapse {
-    display: none;
-}
+
 .logo {
-    background-color: #232323;
+    background-color: #ffffff;
     height: 90px;
-    padding-right: 10vw;
+    padding-left: 10vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
 .logo > svg {
-    float: right;
+    float: left;
     padding-right: 0;
     width: auto;
     height: 100%;
-    fill: #333333;
+    fill: #ffffff;
     transition: fill 0.3s;
+    color: #232323;
 }
 .logo > svg:hover {
-    fill: #555555;
+    fill: #232323;
 }
 .logo > svg:active {
-    fill: #d4d4d4;
+    fill: #ffffff;
 }
 .logo-path {
     stroke-dasharray: 400;
     stroke-dashoffset: 0;
 }
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 700px) {
     .link button {
         flex-wrap: wrap;
-        
+        font-size: 20px;
     }
-
-
     ul.links {
         flex-wrap: wrap;
         margin-top: 1vh;
     }
     div.nav-bar {
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 70% 30%;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
   }

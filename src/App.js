@@ -24,6 +24,7 @@ export default class App extends React.Component {
                 portfolio={() => this.pageSwap(2)}/>
         <div className="buffer-bar"></div>
         <Content page={this.state.page}/>
+
       </div>
     );
   }
