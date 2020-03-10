@@ -56,6 +56,14 @@
         font-size: 56px;
     }
     .window button {
-        margin-top: 20vh;
+        margin-top: 2vh;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .window {
+        margin: 10vh 10vw 0;
+    }
+    .window h1{
+        font-size: 56px;
     }
   }
