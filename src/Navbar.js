@@ -66,8 +66,8 @@ export default class Navbar extends React.Component {
                             </button>
                         </li>
                         <li className="link">
-                            <button onClick={() => {this.animateLogoLoad(); this.props.resume();}}>
-                                resume
+                            <button onClick={() => {this.animateLogoLoad();}}>
+                                <a href= "resume.pdf" target="_blank">resume</a>
                             </button>
                         </li>
                         <li className="link">

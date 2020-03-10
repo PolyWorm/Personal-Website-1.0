@@ -52,7 +52,15 @@ ul.links {
     color: #ffffff;
     transform: translateY(2px);
 }
-
+.link button a{
+    color: #232323;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.link button a:hover{
+    color: #a3a3a3;
+    text-decoration: none;
+}
 .logo {
     background-color: #ffffff;
     height: 90px;
