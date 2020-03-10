@@ -6,9 +6,20 @@
 }
 .window h1{
     letter-spacing: 1px;
+    line-height: 85%;
     font-family: Poppins;
-    font-size: 9vw;
-    font-weight: 600;
+    font-size: 10vw;
+    font-weight: 800;
+    color: #232323;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+.window h2{
+    letter-spacing: 1px;
+    line-height: 85%;
+    font-family: Poppins;
+    font-size: 6vw;
+    font-weight: 300;
     color: #232323;
     margin-bottom: 0px;
     margin-top: 0;
@@ -18,12 +29,11 @@
     letter-spacing: 1px;
     font-family: Poppins;
     font-size: 24px;
-    font-weight: 100;
+    font-weight: 50;
     color: #232323;
 }
-.window button {
-    border-radius: 20px;
-    margin-top: 20vh;
+.window .b-1 {
+    border-radius: 10px;
     height: 60px;
     width: 200px;
     background-size: 0 10px;
@@ -39,20 +49,30 @@
     text-decoration: none;
     outline: none;
 }
+.window .b-1 a{
+    color: #232323;
+    text-decoration: none;
+}
 .window-0 {
     background: none;
 }
 .window-1 {
-    background-color: yellow;
+    background: none;
 }
 .window-2 {
-    background-color: yellow;
+    background: none;
+}
+.window-3 {
+    background: none;
 }
 @media only screen and (max-width: 700px) {
     .window {
-        margin: 10vh 10vw 0;
+        margin: 5vh 10vw 30vh;
     }
     .window h1{
+        font-size: 50px;
+    }
+    .window h2{
         font-size: 50px;
     }
     .window button {

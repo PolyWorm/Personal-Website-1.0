@@ -7,9 +7,8 @@ export default class Content extends React.Component {
         if (this.props.page === 0) {
             return(
                 <div className="window window-0">
-                    <h1>hi, im justin.</h1>
-                    <p>I am a student at UC Berkeley.
-                        I work on creative functional user experiences.</p>
+                    <h1><br/>Hi Im Justin Li.</h1>
+                    <p>creative and functional design</p>
                     <button className="b-1" onClick={this.props.portfolio}>
                             view work
                     </button>
@@ -18,12 +17,23 @@ export default class Content extends React.Component {
         }
         else if (this.props.page === 1) {
             return(
-                <div className="window window-1"> WORK IN PROGRESS</div>
+                <div className="window window-1"> 
+                    <h1><br/>All about me.</h1>
+                    <p>I have a passion for creating beautiful things, and beauty for me refers to more than just aesthetic. I aim to create applications that feel natural to use. Currently, I'm interested in user interaction within VR and AR. Feel free to contact me: poliworm@gmail.com </p>
+                    <button className="b-1" onClick={this.props.portfolio}>
+                        <a className="b-2" href="mailto:poliworm@gmail.com" target="_top">email me</a>
+                    </button>
+                </div>
             );
         }
         else if (this.props.page === 2) {
             return(
-                <div className="window window-2">WORK IN PROGRESS</div>
+                <div className="window window-2"> WORK IN PROGRESS</div>
+            );
+        }
+        else if (this.props.page === 3) {
+            return(
+                <div className="window window-3">WORK IN PROGRESS</div>
             );
         }
     }

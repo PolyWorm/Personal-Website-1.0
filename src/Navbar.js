@@ -42,7 +42,7 @@ export default class Navbar extends React.Component {
     render() {
         return (
             <div className="nav-bar">
-                <div className="logo" onClick={this.animateLogoReverse}>
+                <div className="logo" onClick={() => {this.animateLogoLoad(); this.props.home();}}>
                     <svg id="logoAnimation" xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 130 130">
                         <path className="logo-path" d="M58.82,125V78.78a12.6,12.6,0,0,0-12.6-12.6H0V80.88H38.24a5.88,5.88,0,0,1,5.88,5.88V125Z" stroke="#232323" strokeWidth="2"/>
                         <path className="logo-path" d="M36.76,125V110.29H20.59a5.88,5.88,0,0,1-5.88-5.88V88.24H0V112.4A12.6,12.6,0,0,0,12.6,125Z" stroke="#232323" strokeWidth="2"/>
