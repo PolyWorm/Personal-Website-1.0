@@ -7,9 +7,10 @@ export default class Content extends React.Component {
         if (this.props.page === 0) {
             return(
                 <div className="window window-0">
-                    <h1>I am Justin Li.</h1>
-                    <p>I focus on creative functional user experiences.</p>
-                    <button className="b-1">
+                    <h1>hi, im justin.</h1>
+                    <p>I am a student at UC Berkeley.
+                        I work on creative functional user experiences.</p>
+                    <button className="b-1" onClick={this.props.portfolio}>
                             view work
                     </button>
                 </div>
@@ -17,12 +18,12 @@ export default class Content extends React.Component {
         }
         else if (this.props.page === 1) {
             return(
-                <div className="window window-1"></div>
+                <div className="window window-1"> WORK IN PROGRESS</div>
             );
         }
         else if (this.props.page === 2) {
             return(
-                <div className="window window-2"></div>
+                <div className="window window-2">WORK IN PROGRESS</div>
             );
         }
     }

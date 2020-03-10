@@ -23,7 +23,8 @@ export default class App extends React.Component {
                 resume={() => this.pageSwap(1)}
                 portfolio={() => this.pageSwap(2)}/>
         <div className="buffer-bar"></div>
-        <Content page={this.state.page}/>
+        <Content page={this.state.page}
+                portfolio={() => this.pageSwap(2)}/>
 
       </div>
     );
