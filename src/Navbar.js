@@ -3,9 +3,7 @@ import './Navbar.css';
 import anime from 'animejs/lib/anime.es.js';
 
 export default class Navbar extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+
     componentDidMount() {
         this.animateLogo()
     }
@@ -14,9 +12,9 @@ export default class Navbar extends React.Component {
             targets: '.logo-path',
             strokeDashoffset: [450, 0],
             direction: 'normal',
-            easing: 'easeInSine',
-            duration: 2000,
-            delay: function(el, i) { return i * 50 },
+            easing: 'easeInOutQuint',
+            duration: 3000,
+            delay: function(el, i) { return i * 70 },
           });
     }
     animateLogoReverse() {
@@ -24,25 +22,25 @@ export default class Navbar extends React.Component {
             targets: '.logo-path',
             strokeDashoffset: [0, 400],
             direction: 'alternate',
-            easing: 'easeOutQuart',
-            duration: 500,
-            delay: function(el, i) { return i * 50 },
+            easing: 'easeInOutQuint',
+            duration: 2000,
+            delay: function(el, i) { return i * 10 },
           });
     }
     animateLogoLoad() {
         anime({
             targets: '.logo-path',
-            strokeDashoffset: [0, 400],
+            strokeDashoffset: [0, 700],
             direction: 'alternate',
             easing: 'easeInOutQuint',
-            duration: 500,
-            delay: function(el, i) { return i * 50 },
+            duration: 250,
+            delay: function(el, i) { return i * 10 },
           });
     }
     render() {
         return (
             <div className="nav-bar">
-                <div className="logo" onClick={() => {this.animateLogoLoad(); this.props.home();}}>
+                <div className="logo" onClick={() => {this.animateLogoReverse(); this.props.home();}}>
                     <svg id="logoAnimation" xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 130 130">
                         <path className="logo-path" d="M58.82,125V78.78a12.6,12.6,0,0,0-12.6-12.6H0V80.88H38.24a5.88,5.88,0,0,1,5.88,5.88V125Z" stroke="#232323" strokeWidth="2"/>
                         <path className="logo-path" d="M36.76,125V110.29H20.59a5.88,5.88,0,0,1-5.88-5.88V88.24H0V112.4A12.6,12.6,0,0,0,12.6,125Z" stroke="#232323" strokeWidth="2"/>

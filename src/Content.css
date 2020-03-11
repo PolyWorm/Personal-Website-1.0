@@ -72,6 +72,7 @@
 }
 .window-1 {
     background: none;
+    height: 100vh;
 }
 .window-2 {
     background: none;
@@ -81,10 +82,10 @@
 }
 @media only screen and (max-width: 700px) {
     .window {
-        margin: 5vh 10vw 25vh;
+        margin: 5vh 10vw 20vh;
     }
     .window-1 {
-        margin: 5vh 10vw 45vh;
+        margin: 5vh 10vw 70vw;
     }
     .window h1{
         font-size: 50px;
